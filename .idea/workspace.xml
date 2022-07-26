@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/EnchantAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EditSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/FastEditSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoadingClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/commands.rdcml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Fuck this is too big of a commit&#10;Add a debug token command&#10;Added EnchantAPI to one day allow people to register their own enchants&#10;Added Enchantment, so we can have our own enchants&#10;Added Explosive to show how to use Enchantment&#10;gonna remove FastEditSession maybe&#10;idk what the JarLoader stuff is man&#10;register Explosive as a test enchant in Tokens">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/SQLUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/events/TokenDeductEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/events/TokenGainEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Explosive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Explosive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/jar/JarLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/jar/JarLoaderUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/jar/LoadingClass.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658697945477</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fuck this is too big of a commit&#10;Add a debug token command&#10;Added EnchantAPI to one day allow people to register their own enchants&#10;Added Enchantment, so we can have our own enchants&#10;Added Explosive to show how to use Enchantment&#10;gonna remove FastEditSession maybe&#10;idk what the JarLoader stuff is man&#10;register Explosive as a test enchant in Tokens">
+      <created>1658865509858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658865509858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Fuck this is too big of a commit&#10;Add a debug token command&#10;Added EnchantAPI to one day allow people to register their own enchants&#10;Added Enchantment, so we can have our own enchants&#10;Added Explosive to show how to use Enchantment&#10;gonna remove FastEditSession maybe&#10;idk what the JarLoader stuff is man&#10;register Explosive as a test enchant in Tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fuck this is too big of a commit&#10;Add a debug token command&#10;Added EnchantAPI to one day allow people to register their own enchants&#10;Added Enchantment, so we can have our own enchants&#10;Added Explosive to show how to use Enchantment&#10;gonna remove FastEditSession maybe&#10;idk what the JarLoader stuff is man&#10;register Explosive as a test enchant in Tokens" />
   </component>
 </project>
