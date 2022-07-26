@@ -1,0 +1,7 @@
+token,tokens {
+
+    debug {
+        hook debug
+        permission tokens.debug
+    }
+}
