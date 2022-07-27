@@ -30,6 +30,11 @@ task copyTo_DevServer(type: Copy) {
     into "E:/Coding/Spigot Test Servers/1.18 Tokens Plugin/plugins"
 }
 
+task copyTo_AddonTest(type: Copy) {
+    from shadowJar
+    into "C:/Users/44775/IdeaProjects/TokensAddonTest/libs"
+}
+
 test {
     useJUnitPlatform()
 }

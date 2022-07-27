@@ -73,7 +73,7 @@ public class JarLoader {
             ClassLoader classLoader = URLClassLoader.newInstance(new URL[]{file.toURI().toURL()}, getClass().getClassLoader());
             for (String className : classes) {
                 Class<?> loaded = Class.forName(className, true, classLoader);
-                if (loaded.isAssignableFrom(superClass)) {
+                if (!loaded.isAssignableFrom(superClass)) {
                     return loaded.asSubclass(superClass);
                 }
             }
