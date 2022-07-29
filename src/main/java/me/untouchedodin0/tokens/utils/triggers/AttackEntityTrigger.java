@@ -1,4 +1,4 @@
-.package me.untouchedodin0.tokens.utils.triggers;
+package me.untouchedodin0.tokens.utils.triggers;
 
 import me.untouchedodin0.tokens.utils.EnchantTrigger;
 import me.untouchedodin0.tokens.utils.EventItems;
