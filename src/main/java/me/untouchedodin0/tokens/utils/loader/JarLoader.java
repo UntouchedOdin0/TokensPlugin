@@ -22,16 +22,16 @@ public class JarLoader {
      * @param file       loaded file
      * @param superClass super class, used to initialize the loaded jar's providers.
      *                   <b>Required because we can't require instance of the super class</b>
-     * @param <T> super class, used to initialize the loaded jar's providers
-     * @return super class if load was accomplished
+     * @param <T>        super class, used to initialize the loaded jar's providers
      * @throws NullPointerException        if file does not exist
      * @throws NotJarException             if file isn't jar
      * @throws FileCannotBeLoadedException if file cannot be loaded (does not contain any files which extend the super class)
      */
-    public <T> T load(File file, Class<T> superClass) {
+    public <T> void load(File file, Class<T> superClass) {
         try {
             Class<? extends T> raw = getRawClass(file, superClass);
-            return raw.getDeclaredConstructor().newInstance();
+            raw.getDeclaredConstructor().newInstance();
+            return;
         } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException | NoSuchMethodException e) {
@@ -61,8 +61,10 @@ public class JarLoader {
         }
         try {
             Set<String> classes = new HashSet<>();
-            JarFile jar = new JarFile(file);
-            Enumeration<JarEntry> entries = jar.entries();
+            Enumeration<JarEntry> entries;
+            try (JarFile jar = new JarFile(file)) {
+                entries = jar.entries();
+            }
             while (entries.hasMoreElements()) {
                 JarEntry entry = entries.nextElement();
                 if (entry.isDirectory() || !entry.getName().endsWith(".class")) {

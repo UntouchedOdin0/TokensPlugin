@@ -2,11 +2,12 @@ package me.untouchedodin0.tokens;
 
 import me.untouchedodin0.tokens.commands.TokensCommand;
 import me.untouchedodin0.tokens.enchantment.Mighty;
+import me.untouchedodin0.tokens.utils.EnchantRegistry;
 import me.untouchedodin0.tokens.utils.addon.Enchantment;
 import me.untouchedodin0.tokens.utils.loader.JarLoader;
 import org.bukkit.plugin.java.JavaPlugin;
 import redempt.redlib.commandmanager.CommandParser;
-import redempt.redlib.enchants.EnchantRegistry;
+//import redempt.redlib.enchants.EnchantRegistry;
 
 import java.io.File;
 import java.util.Objects;

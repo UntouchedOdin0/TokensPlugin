@@ -26,5 +26,4 @@ public class Mighty extends Enchantment {
     public void onBreak(BlockBreakEvent event) {
         event.getPlayer().sendMessage("Mighty potato block break woo");
     }
-
 }
