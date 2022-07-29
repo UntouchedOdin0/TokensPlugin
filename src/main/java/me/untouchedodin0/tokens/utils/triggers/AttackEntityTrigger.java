@@ -18,7 +18,7 @@ public class AttackEntityTrigger extends EnchantTrigger<EntityDamageByEntityEven
             if (!(e.getDamager() instanceof Player)) {
                 return null;
             }
-            return new EventItems(e, ((Player) e.getDamager()).getItemInHand());
+            return new EventItems(e, ((Player) e.getDamager()).getInventory().getItemInMainHand());
         });
     }
 

@@ -4,30 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Changed up some things in Enchantment&#10;Fixed JarLoader&#10;Added Mighty as a test&#10;Added a api-version to plugin.yml&#10;Load the jar files correctly">
-      <change afterPath="$PROJECT_DIR$/TokensPlugin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EventItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/ProtectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/AttackEntityTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/EquipArmorTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/HoldItemTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/KillEntityTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/MineBlockTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/ShootArrowTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/TakeDamageTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/enchantments/LaserUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Mighty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Mighty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoader.java" afterDir="false" />
+    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Tiny fix">
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/AttackEntityTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/AttackEntityTrigger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658955772769</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added all the Trigger handlers&#10;Added the EnchantRegistry&#10;And added all the other stuff needed for enchants">
+      <created>1659117810834</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659117810834</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Tiny fix">
+      <created>1659117855960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659117855960</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +248,8 @@
     <MESSAGE value="SQLUtils stuff and also added some events" />
     <MESSAGE value="jitpack.yml stuff" />
     <MESSAGE value="Changed up some things in Enchantment&#10;Fixed JarLoader&#10;Added Mighty as a test&#10;Added a api-version to plugin.yml&#10;Load the jar files correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed up some things in Enchantment&#10;Fixed JarLoader&#10;Added Mighty as a test&#10;Added a api-version to plugin.yml&#10;Load the jar files correctly" />
+    <MESSAGE value="Added all the Trigger handlers&#10;Added the EnchantRegistry&#10;And added all the other stuff needed for enchants" />
+    <MESSAGE value="Tiny fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tiny fix" />
   </component>
 </project>
