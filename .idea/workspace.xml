@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Tiny fix part 2">
+    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jitpack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jitpack.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659117874486</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test">
+      <created>1659184833032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659184833032</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +266,7 @@
     <MESSAGE value="Added all the Trigger handlers&#10;Added the EnchantRegistry&#10;And added all the other stuff needed for enchants" />
     <MESSAGE value="Tiny fix" />
     <MESSAGE value="Tiny fix part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tiny fix part 2" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
