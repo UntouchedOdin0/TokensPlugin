@@ -9,8 +9,6 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.ProjectileLaunchEvent;
-import redempt.redlib.enchants.events.PlayerChangedArmorEvent;
-import redempt.redlib.enchants.events.PlayerChangedHeldItemEvent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -50,14 +48,14 @@ public abstract class EnchantTrigger<T extends Event> {
      * Calls deactivate with a PlayerChangedArmorEvent when a player unequips armor that has a CustomEnchant with this trigger
      * Also calls deactivate when a player leaves wearing armor with this trigger
      */
-    public static final EnchantTrigger<PlayerChangedArmorEvent> EQUIP_ARMOR = new EquipArmorTrigger();
-    /**
-     * Calls activate with a PlayerChangedHeldItemEvent when a player begins holding an item that has a CustomEnchant with this trigger
-     * Also calls activate when a player joins holding an item with this trigger
-     * Calls deactivate with a PlayerChangedHeldItemEvent when a player stops holding an item that has a CustomEnchant with this trigger
-     * Also calls deactivate when a player leaves holding an item with this trigger
-     */
-    public static final EnchantTrigger<PlayerChangedHeldItemEvent> HOLD_ITEM = new HoldItemTrigger();
+//    public static final EnchantTrigger<PlayerChangedArmorEvent> EQUIP_ARMOR = new EquipArmorTrigger();
+//    /**
+//     * Calls activate with a PlayerChangedHeldItemEvent when a player begins holding an item that has a CustomEnchant with this trigger
+//     * Also calls activate when a player joins holding an item with this trigger
+//     * Calls deactivate with a PlayerChangedHeldItemEvent when a player stops holding an item that has a CustomEnchant with this trigger
+//     * Also calls deactivate when a player leaves holding an item with this trigger
+//     */
+//    public static final EnchantTrigger<PlayerChangedHeldItemEvent> HOLD_ITEM = new HoldItemTrigger();
 
     protected Map<Class<? extends Event>, Function<Event, EventItems>> events = new HashMap<>();
 

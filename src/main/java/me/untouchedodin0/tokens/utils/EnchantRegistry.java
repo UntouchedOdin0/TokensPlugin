@@ -5,8 +5,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.event.Event;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
-import redempt.redlib.RedLib;
-import redempt.redlib.commandmanager.ArgType;
+
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -151,19 +150,19 @@ public class EnchantRegistry {
      *
      * @param plugin The plugin to load all CustomEnchants from
      */
-    public void registerAll(Plugin plugin) {
-        List<Class<? extends Enchantment>> list = RedLib.getExtendingClasses(plugin, Enchantment.class);
-        for (Class<?> clazz : list) {
-            try {
-                Constructor<?> constructor = clazz.getConstructor();
-                Enchantment ench = (Enchantment) constructor.newInstance();
-                register(ench);
-            } catch (NoSuchMethodException | InstantiationException | IllegalAccessException |
-                     InvocationTargetException e) {
-                throw new IllegalStateException("Class " + clazz.getName() + " does not have a default constructor or could not be loaded", e);
-            }
-        }
-    }
+//    public void registerAll(Plugin plugin) {
+//        List<Class<? extends Enchantment>> list = RedLib.getExtendingClasses(plugin, Enchantment.class);
+//        for (Class<?> clazz : list) {
+//            try {
+//                Constructor<?> constructor = clazz.getConstructor();
+//                Enchantment ench = (Enchantment) constructor.newInstance();
+//                register(ench);
+//            } catch (NoSuchMethodException | InstantiationException | IllegalAccessException |
+//                     InvocationTargetException e) {
+//                throw new IllegalStateException("Class " + clazz.getName() + " does not have a default constructor or could not be loaded", e);
+//            }
+//        }
+//    }
 
     /**
      * Gets all the CustomEnchants on an item
@@ -271,7 +270,7 @@ public class EnchantRegistry {
      * @param name The name to use for the argument type
      * @return A CommandArgumentType for CustomEnchants in this registry
      */
-    public ArgType<? extends Enchantment> getEnchantArgType(String name) {
-        return new ArgType<>(name, this::getByName).tabStream(c -> enchants.keySet().stream());
-    }
+//    public ArgType<? extends Enchantment> getEnchantArgType(String name) {
+//        return new ArgType<>(name, this::getByName).tabStream(c -> enchants.keySet().stream());
+//    }
 }

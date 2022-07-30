@@ -23,7 +23,7 @@ dependencies {
     compileOnly 'com.sk89q.worldedit:worldedit-bukkit:7.2.10'
     compileOnly 'com.sk89q.worldguard:worldguard-bukkit:7.0.7'
 
-    implementation 'com.github.Redempt:RedLib:6.5.2.1'
+    implementation 'com.github.Redempt:RedLib:6.5.3.2'
     implementation 'org.jetbrains:annotations:16.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }

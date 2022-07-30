@@ -3,7 +3,7 @@ package me.untouchedodin0.tokens.utils;
 import org.bukkit.Bukkit;
 import org.bukkit.event.*;
 import org.bukkit.plugin.Plugin;
-import redempt.redlib.RedLib;
+//import redempt.redlib.RedLib;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -25,9 +25,9 @@ public class EventListener<T extends Event> implements Listener {
      * @param priority The EventPriority for this listener
      * @param handler The callback to receive the event and this EventListener
      */
-    public EventListener(Class<T> eventClass, EventPriority priority, BiConsumer<EventListener<T>, T> handler) {
-        this(RedLib.getCallingPlugin(), eventClass, priority, handler);
-    }
+//    public EventListener(Class<T> eventClass, EventPriority priority, BiConsumer<EventListener<T>, T> handler) {
+//        this(RedLib.getCallingPlugin(), eventClass, priority, handler);
+//    }
 
     /**
      * Creates and registers a Listener for the given event
@@ -48,9 +48,9 @@ public class EventListener<T extends Event> implements Listener {
      * @param priority The EventPriority for this listener
      * @param handler The callback to receive the event
      */
-    public EventListener(Class<T> eventClass, EventPriority priority, Consumer<T> handler) {
-        this(RedLib.getCallingPlugin(), eventClass, priority, handler);
-    }
+//    public EventListener(Class<T> eventClass, EventPriority priority, Consumer<T> handler) {
+//        this(RedLib.getCallingPlugin(), eventClass, priority, handler);
+//    }
 
     /**
      * Creates and registers a Listener for the given event
@@ -68,9 +68,9 @@ public class EventListener<T extends Event> implements Listener {
      * @param eventClass The class of the event being listened for
      * @param handler The callback to receive the event and this EventListener
      */
-    public EventListener(Class<T> eventClass, BiConsumer<EventListener<T>, T> handler) {
-        this(RedLib.getCallingPlugin(), eventClass, handler);
-    }
+//    public EventListener(Class<T> eventClass, BiConsumer<EventListener<T>, T> handler) {
+//        this(RedLib.getCallingPlugin(), eventClass, handler);
+//    }
 
     /**
      * Creates and registers a Listener for the given event
@@ -87,9 +87,9 @@ public class EventListener<T extends Event> implements Listener {
      * @param eventClass The class of the event being listened for
      * @param handler The callback to receive the event
      */
-    public EventListener(Class<T> eventClass, Consumer<T> handler) {
-        this(RedLib.getCallingPlugin(), eventClass, handler);
-    }
+//    public EventListener(Class<T> eventClass, Consumer<T> handler) {
+//        this(RedLib.getCallingPlugin(), eventClass, handler);
+//    }
 
     /**
      * Creates and registers a Listener for the given event
