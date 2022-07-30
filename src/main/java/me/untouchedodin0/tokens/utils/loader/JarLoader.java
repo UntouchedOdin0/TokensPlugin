@@ -22,16 +22,16 @@ public class JarLoader {
      * @param file       loaded file
      * @param superClass super class, used to initialize the loaded jar's providers.
      *                   <b>Required because we can't require instance of the super class</b>
-     * @param <T>        super class, used to initialize the loaded jar's providers
+     * @param <T> super class, used to initialize the loaded jar's providers
+     * @return super class if load was accomplished
      * @throws NullPointerException        if file does not exist
      * @throws NotJarException             if file isn't jar
      * @throws FileCannotBeLoadedException if file cannot be loaded (does not contain any files which extend the super class)
      */
-    public <T> void load(File file, Class<T> superClass) {
+    public <T> T load(File file, Class<T> superClass) {
         try {
             Class<? extends T> raw = getRawClass(file, superClass);
-            raw.getDeclaredConstructor().newInstance();
-            return;
+            return raw.getDeclaredConstructor().newInstance();
         } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException | NoSuchMethodException e) {
@@ -61,10 +61,8 @@ public class JarLoader {
         }
         try {
             Set<String> classes = new HashSet<>();
-            Enumeration<JarEntry> entries;
-            try (JarFile jar = new JarFile(file)) {
-                entries = jar.entries();
-            }
+            JarFile jar = new JarFile(file);
+            Enumeration<JarEntry> entries = jar.entries();
             while (entries.hasMoreElements()) {
                 JarEntry entry = entries.nextElement();
                 if (entry.isDirectory() || !entry.getName().endsWith(".class")) {
@@ -75,7 +73,7 @@ public class JarLoader {
             ClassLoader classLoader = URLClassLoader.newInstance(new URL[]{file.toURI().toURL()}, getClass().getClassLoader());
             for (String className : classes) {
                 Class<?> loaded = Class.forName(className, true, classLoader);
-                if (!loaded.isAssignableFrom(superClass)) {
+                if (loaded.isAssignableFrom(superClass)) {
                     return loaded.asSubclass(superClass);
                 }
             }
