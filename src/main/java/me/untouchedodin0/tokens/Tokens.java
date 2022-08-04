@@ -2,11 +2,12 @@ package me.untouchedodin0.tokens;
 
 import me.untouchedodin0.tokens.commands.TokensCommand;
 import me.untouchedodin0.tokens.enchantment.Mighty;
-import me.untouchedodin0.tokens.utils.EnchantRegistry;
+import me.untouchedodin0.tokens.listener.PickaxeRightClickEvent;
 import me.untouchedodin0.tokens.utils.addon.Enchantment;
 import me.untouchedodin0.tokens.utils.loader.JarLoader;
 import org.bukkit.plugin.java.JavaPlugin;
 import redempt.redlib.commandmanager.CommandParser;
+import redempt.redlib.enchants.EnchantRegistry;
 
 import java.io.File;
 import java.util.Objects;
@@ -22,7 +23,7 @@ public class Tokens extends JavaPlugin {
         getLogger().info("Loading Tokens...");
         saveDefaultConfig();
         tokens = this;
-        this.enchantRegistry = EnchantRegistry.get(this);
+        this.enchantRegistry = new EnchantRegistry(tokens);
         this.enchantAPI = new EnchantAPI();
 
         File addonsFolder = new File(getDataFolder() + "/addons");
@@ -48,6 +49,10 @@ public class Tokens extends JavaPlugin {
             getLogger().info("Loading file: " + file.getName());
             jarLoader.load(file, Enchantment.class);
         }
+
+        enchantRegistry.registerAll(tokens);
+
+        getServer().getPluginManager().registerEvents(new PickaxeRightClickEvent(enchantRegistry), this);
     }
 
 
@@ -57,5 +62,9 @@ public class Tokens extends JavaPlugin {
 
     public EnchantAPI getEnchantAPI() {
         return enchantAPI;
+    }
+
+    public EnchantRegistry getEnchantRegistry() {
+        return enchantRegistry;
     }
 }

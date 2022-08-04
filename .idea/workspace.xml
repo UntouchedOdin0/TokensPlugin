@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="test">
+    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Latest code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/TestEnchant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/listener/PickaxeRightClickEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/menu/EnchantMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/EnchantAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/EnchantAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantTrigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/SQLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/SQLUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/loader/JarLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/EquipArmorTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/EquipArmorTrigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/HoldItemTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/HoldItemTrigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Mighty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Mighty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EnchantTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EventItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/EventListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/FastEditSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/AttackEntityTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/EquipArmorTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/HoldItemTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/KillEntityTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/MineBlockTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/ShootArrowTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/triggers/TakeDamageTrigger.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659185119599</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Latest code">
+      <created>1659208383455</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659208383455</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,6 +300,7 @@
     <MESSAGE value="Tiny fix" />
     <MESSAGE value="Tiny fix part 2" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Latest code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest code" />
   </component>
 </project>
