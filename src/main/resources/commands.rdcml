@@ -1,7 +1,27 @@
-token,tokens {
+tokens,token {
+    hook main
 
-    debug {
-        hook debug
-        permission tokens.debug
+    give player:target double:amount {
+        hook give
+        help Gives a player tokens
+        permission tokens.give
+    }
+
+    pay player:target double:amount {
+        hook pay
+        help Pay another player tokens
+        permission tokens.pay
+    }
+
+    set player:target double:amount {
+        hook set
+        help Sets the players tokens
+        permission tokens.set
+    }
+
+    remove player:target double:amount {
+        hook remove
+        help Removes tokens from a player
+        permission tokens.remove
     }
 }
