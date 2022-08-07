@@ -1,12 +1,19 @@
 package me.untouchedodin0.tokens.commands;
 
 import me.untouchedodin0.tokens.utils.SQLUtils;
+import me.untouchedodin0.tokens.utils.Utils;
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
+import org.bukkit.Particle;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import redempt.redlib.commandmanager.CommandHook;
+import redempt.redlib.misc.LocationUtils;
+import xyz.xenondevs.particle.ParticleBuilder;
+import xyz.xenondevs.particle.ParticleEffect;
 
 import java.math.BigInteger;
+import java.util.List;
 import java.util.UUID;
 
 public class TokensCommand {
@@ -55,5 +62,23 @@ public class TokensCommand {
             commandSender.sendMessage(String.format(ChatColor.GREEN + "Removing %.0f tokens from %s!", amount, target.getName()));
             SQLUtils.removeTokens(targetUUID, amount);
         }
+    }
+
+    @CommandHook("spawntornado")
+    public void spawnTornado(Player player) {
+        Location location = player.getLocation();
+        player.sendMessage("a");
+        List<Location> tornadoLocations = Utils.getCone(location, 5, 5);
+
+        tornadoLocations.forEach(location1 -> {
+            player.sendMessage("" + location1);
+
+            new ParticleBuilder(ParticleEffect.CLOUD, location1).setSpeed(0.1f)
+                            .display();
+
+            ParticleEffect.CLOUD.display(location1);
+        });
+//        player.sendMessage("" + tornadoLocations);
+//        player.sendMessage(LocationUtils.toString(location));
     }
 }

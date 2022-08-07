@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Fixes the SQL stuff :)">
+    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Small tidy up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/commands.rdcml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/commands.rdcml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659734405286</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Small tidy up">
+      <created>1659812956361</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659812956361</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +307,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="Latest code" />
     <MESSAGE value="Fixes the SQL stuff :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes the SQL stuff :)" />
+    <MESSAGE value="Small tidy up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small tidy up" />
   </component>
 </project>

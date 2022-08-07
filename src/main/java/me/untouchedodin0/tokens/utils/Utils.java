@@ -1,9 +1,17 @@
 package me.untouchedodin0.tokens.utils;
 
+import org.bukkit.Location;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Utils {
+
+    public static int angle = 0;
 
     /**
      * Converts a number to roman numerals, between 1 and 10
+     *
      * @param num The number to convert
      * @return The roman numerals representation of the number
      */
@@ -25,6 +33,7 @@ public class Utils {
 
     /**
      * Converts roman numeral string, between 1 and 10, back to a number
+     *
      * @param romanNumerals The roman numerals string
      * @return The number represented by the roman numerals
      */
@@ -58,5 +67,35 @@ public class Utils {
                 }
                 return Integer.parseInt(romanNumerals);
         }
+    }
+
+    // Credits to the madlad finnbon.
+    public static List<Location> getCone(Location location, int maxHeight, double maxRadius) {
+
+        List<Location> locations = new ArrayList<>();
+
+        int max_height = 15; // The max height of the tornado.
+        double max_radius = 10; // The max radius of the tornado.
+        int lines = 4; // The amount of particle lines it exsists of.
+        double height_increasement = 0.5; // The increasement in height per particle.
+
+        // This is the increasement in the radius per y level.
+        // As you can see, at the bottom, the radius is 0.
+        // Y is 0, and the radius increasement is 0.67 (not exactly, but you get it).
+        // 0 x 0.33 = 0. At the top the radius is 10.
+        // The height there is 15. 15 * 0.67 = 10. (Again, not exactly).
+
+        double radius_increasement = maxRadius / maxHeight;
+
+        for (int l = 0; l < lines; l++) {
+            for (double y = 0; y < max_height; y+= height_increasement) {
+                double radius = y * radius_increasement;
+                double x = Math.cos(Math.toRadians(360.0 / lines * l * 25 - angle)) * radius;
+                double z = Math.sin(Math.toRadians(360.0 / lines * l + y * 25 - angle)) * radius;
+                locations.add(location.clone().add(x, y, z));
+            }
+        }
+
+        return locations;
     }
 }

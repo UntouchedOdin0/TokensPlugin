@@ -24,4 +24,8 @@ tokens,token {
         help Removes tokens from a player
         permission tokens.remove
     }
+
+    spawntornado {
+        hook spawntornado
+    }
 }
