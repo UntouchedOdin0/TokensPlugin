@@ -28,4 +28,12 @@ tokens,token {
     spawntornado {
         hook spawntornado
     }
+
+    enchanttest {
+        hook enchanttestcommand
+    }
+
+    enchantincrease {
+        hook enchantincreasecommand
+    }
 }

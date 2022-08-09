@@ -1,6 +1,8 @@
 package me.untouchedodin0.tokens.utils;
 
 import org.bukkit.Location;
+import org.bukkit.inventory.ItemStack;
+import redempt.redlib.enchants.CustomEnchant;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -97,5 +99,10 @@ public class Utils {
         }
 
         return locations;
+    }
+
+    public static ItemStack increaseLevel(ItemStack itemStack, CustomEnchant customEnchant, int amount) {
+        if (customEnchant.getLevel(itemStack) + amount > customEnchant.getMaxLevel()) return itemStack;
+        return customEnchant.apply(itemStack, customEnchant.getLevel(itemStack) + amount);
     }
 }

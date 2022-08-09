@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Small tidy up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/commands.rdcml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/commands.rdcml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +53,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
