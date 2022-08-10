@@ -104,7 +104,9 @@ public class TokensCommand {
     public void test(Player player) {
         ItemStack itemStack = player.getInventory().getItemInMainHand();
         EnchantRegistry enchantRegistry = Tokens.getTokens().getEnchantRegistry();
+        player.sendMessage("" + enchantRegistry);
         CustomEnchant test = enchantRegistry.getByName("Test");
+        player.sendMessage("" + test);
         test.apply(itemStack, 1);
     }
 

@@ -13,6 +13,7 @@ import redempt.redlib.enchants.EnchantRegistry;
 import java.util.ArrayList;
 import java.util.List;
 
+import static me.untouchedodin0.tokens.utils.Utils.fromRomanNumerals;
 import static me.untouchedodin0.tokens.utils.Utils.toRomanNumerals;
 
 public abstract class Enchantment implements Listener {
@@ -54,6 +55,25 @@ public abstract class Enchantment implements Listener {
 
     public int getMaxLevel() {
         return maxLevel;
+    }
+
+    public int getLevel(ItemStack itemStack) {
+        if (itemStack == null || !itemStack.hasItemMeta() || !itemStack.getItemMeta().hasLore()) {
+            return 0;
+        }
+
+        List<String> lore = itemStack.getItemMeta().getLore();
+        String name = getName();
+        for (int i = lore.size() -1; i >= 0; i--) {
+            String line = lore.get(i);
+            if (line.startsWith(name)) {
+                if (line.length() == name.length()) {
+                    return 1;
+                }
+                return fromRomanNumerals(line.substring(name.length() + 1));
+            }
+        }
+        return 0;
     }
 
     boolean appliesTo(Material material) {

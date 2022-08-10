@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Small tidy up">
+    <list default="true" id="e887761a-4e05-44e1-9f2b-85808793d503" name="Changes" comment="Add a tornado test command">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Jackhammer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/Tokens.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/commands/TokensCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Mighty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/Mighty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/TestEnchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/enchantment/TestEnchant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/untouchedodin0/tokens/utils/addon/Enchantment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/commands.rdcml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/commands.rdcml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659812956361</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add a tornado test command">
+      <created>1660079021357</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660079021357</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,6 +321,7 @@
     <MESSAGE value="Latest code" />
     <MESSAGE value="Fixes the SQL stuff :)" />
     <MESSAGE value="Small tidy up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small tidy up" />
+    <MESSAGE value="Add a tornado test command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a tornado test command" />
   </component>
 </project>

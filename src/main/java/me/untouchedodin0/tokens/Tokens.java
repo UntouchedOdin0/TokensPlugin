@@ -32,9 +32,10 @@ public class Tokens extends JavaPlugin {
         tokens = this;
         connection = SQLHelper.openSQLite(getDataFolder().toPath().resolve("database.sql"));
         this.sqlHelper = new SQLHelper(connection);
-        this.enchantRegistry = new EnchantRegistry(tokens);
         this.enchantAPI = new EnchantAPI();
         this.sqlUtils = new SQLUtils(sqlHelper);
+        this.enchantRegistry = new EnchantRegistry(this);
+
         getLogger().info("connection: " + connection);
         sqlHelper.executeUpdate("CREATE TABLE IF NOT EXISTS tokens (uuid TEXT UNIQUE, tokens STRING)");
 
@@ -63,6 +64,7 @@ public class Tokens extends JavaPlugin {
         }
 
         enchantRegistry.registerAll(tokens);
+//        this.enchantRegistry = EnchantRegistry.get(tokens);
 
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
         getServer().getPluginManager().registerEvents(new PickaxeRightClickEvent(enchantRegistry), this);

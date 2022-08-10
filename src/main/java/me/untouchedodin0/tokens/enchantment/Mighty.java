@@ -23,15 +23,15 @@ public class Mighty extends Enchantment {
 
     public void onInit() {
         this.tokens = Tokens.tokens;
-        this.enchantRegistry = tokens.getEnchantRegistry();
-
-//        System.out.println("THE MIGHTY POTATO is here?!!!!");
-//        tokens.getLogger().info("enchantRegistry: " + enchantRegistry);
-
-        tokens.getLogger().info(String.format("Registering enchant %s into the registry!", getName()));
-        enchantRegistry.getEnchants().forEach(customEnchant -> {
-            tokens.getLogger().info("found enchant: " + customEnchant.getName() + "!");
-        });
+//        this.enchantRegistry = tokens.getEnchantRegistry();
+//
+////        System.out.println("THE MIGHTY POTATO is here?!!!!");
+////        tokens.getLogger().info("enchantRegistry: " + enchantRegistry);
+//
+//        tokens.getLogger().info(String.format("Registering enchant %s into the registry!", getName()));
+//        enchantRegistry.getEnchants().forEach(customEnchant -> {
+//            tokens.getLogger().info("found enchant: " + customEnchant.getName() + "!");
+//        });
     }
 
     @Override
